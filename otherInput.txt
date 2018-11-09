@@ -1,0 +1,102 @@
+/**
+ * A Node in a Tree
+ *
+ */
+interface TreeNode{
+    TreeNode getParent();
+    void setParent(TreeNode parent);
+
+    TreeNode[] getChildren();
+    
+    void setChildren(TreeNode[] children);
+
+    // A getter/setter to the node for the "value" held there.
+    double getValue();
+    void setValue(double value);
+}
+
+
+class MyTreeNode implements TreeNode {
+    TreeNode[] _children;	  
+    TreeNode[] _parent;
+    double _value;
+
+    MyTreeNode(double value) {
+        _children= newarray(15,TreeNode);
+	_parent= newarray TreeNode;
+	_value = value;
+    }
+    
+    double getValue(){
+    	return value;
+    }
+
+    void setChildren(TreeNode[] children){
+	if (children != null){
+	  _children= children;
+        }
+    }
+
+    TreeNode[] getChildren(){
+    	if (_children != null){
+	  return _children;
+	}
+	else{ 
+	  println("The tree does not have children");
+	}
+	
+    }	
+}
+
+class OtherTree exteds MyTreeNode{
+    
+    double _value;
+    
+    double getValue(){
+    	return _value;
+    }   
+}
+string readLine(){
+	string line= readln("myFile.txt");
+	return line;
+}	
+
+void main(){
+
+    MyTreeNode tree= new MyTreeNode(0X15C12e);
+		
+	double value = tree.getValue(); 
+    string s="total= ";
+    boolean flag= false;
+    int n=10;
+    double total=1.2;
+	double Double= 3.;
+	double DOUBLE=12.E3;
+	double another1=12.e+15;
+	double another2=15.8e-15	
+	int hexa1=0x1f5A;
+				    
+    for (int i=0; i<=10;){
+    	total = total + DOUBLE * another1/another2 - Double;
+		i= i+1; 
+    }
+	println(s,total );
+    
+    int num=10; 	
+    while (!flag && n>0){
+    	
+        if (n == 1 && num || total<42){
+          break;
+		}
+        else 
+			if (n >= 100){
+				num = num / 3;	
+				flag=true; 	
+			}
+		else{	
+          n = n-1; 
+          num= num * 3 % 7;
+        }
+    }		
+    		
+}

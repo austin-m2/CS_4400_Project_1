@@ -1,0 +1,38 @@
+//input2.txt
+class INTEGER extends Integer {
+	int INT;
+}
+interface Interface {
+	double doub[]; 
+}
+void main () {
+	string STRING = null;
+	double dou = 0.5E-10;
+	Object obj = new Object();
+	STRING = "Hello"
+	STRING = "/*comment or string?*/"
+
+	if(23void
+
+	ifintvoid
+
+	0xeff
+	0xefg
+
+	.12
+	0.12
+	12.
+	
+	.12E+2
+	1.2E
+	12.E+2
+
+	boolean test = true;
+	test = false;
+
+	(< <= > >= == =)
+
+
+
+			return;
+}
